@@ -1,9 +1,9 @@
 defmodule GenReport do
   alias GenReport.Parser
 
-  def build(), do: {:error, "Insira o nome de um arquivo"}
-
   @report_structure %{"all_hours" => %{}, "hours_per_month" => %{}, "hours_per_year" => %{}}
+
+  def build(), do: {:error, "Insira o nome de um arquivo"}
 
   def build(file_name) do
     file_name
